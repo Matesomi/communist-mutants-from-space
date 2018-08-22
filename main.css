@@ -1,0 +1,224 @@
+*{
+  box-sizing: border-box;
+}
+
+/*====CSS RESET====*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*====Body====*/
+
+body {
+  font-family: sans-serif;
+}
+
+/*====Header====*/
+
+
+header {
+  text-align: right;
+  line-height: 2;
+}
+
+.upper-nav-bar {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*====Side-bar====*/
+
+.side-bar {
+  position: absolute;
+  display: block;
+  font-size: .8rem;
+  line-height: 1.3;
+  
+}
+
+.side-bar ul {
+  margin:1.5rem;
+}
+
+.wiki-logo {
+  height: 140px;
+  margin: 1.5rem;
+  margin-top: -3.5rem;
+  margin-bottom: 0;
+}
+
+/*====Content====*/
+
+.container {
+  display: block;
+  margin-left: 10rem;
+  padding-left: 1rem;
+  
+}
+
+h1 {
+  font-size: 2rem;
+  font-style: italic;
+  font-family: serif;
+  margin-bottom: 1rem;
+}
+
+h1::after{
+  display: inline-block;
+  content: "";
+  background-color: darkgray;
+  height: 1px;
+  width: 100%;
+  vertical-align: middle;
+  margin-top: -1.7rem;
+}
+
+h6 {
+  font-size: .8rem;
+  margin-top: -1.8rem;
+  margin-bottom: 2rem;
+}
+
+.container p {
+  font-size: .875rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.bold {
+  font-weight: 700;
+  font-style: italic;
+}
+
+h2 {
+  font-family: serif;
+  font-size: 1.3rem;
+}
+
+h2::after {
+  display: inline-block;
+  content: "";
+  background-color: darkgray;
+  height: 1px;
+  width: 100%;
+  vertical-align: middle;
+  margin-top: -1.1rem;
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ol-nav p {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ol-nav {
+  padding: .5rem;
+  display: inline-block;
+  line-height: 1.6;
+  font-size: .875rem;
+  border: solid 1px darkgray;
+  background-color: #f8f9fa;
+  margin-bottom: 1.5rem;
+  margin-top: -1.5rem;
+}
+
+.game-menu {
+  margin-left: 2rem;
+}
+
+.game-photo {
+  float: left;
+  width: 177px;
+  border: solid 1px darkgray;
+  background-color: #f8f9fa;
+  margin: 1rem;
+  margin-left: 0;
+  margin-top: 0;
+  
+  
+  
+  
+}
+
+.game-shot {
+  width: 100%;
+  padding: .3rem;
+}
+
+figcaption {
+  font-size: .75rem;
+  margin-top: -.5rem;
+  line-height: 1.1rem;
+  padding: .3rem;
+}
+
+
+/*====Footer====*/
+
+.footer {
+  display: block;
+  margin-left: 10rem;
+  padding-left: 1rem;
+  font-size: .7rem;
+  line-height: 1.4;
+  
+}
+
+.first-p {
+  margin: 1rem 0;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  line-height: 3;
+  margin: 0 .3rem;
+}
