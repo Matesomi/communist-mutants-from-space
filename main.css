@@ -52,7 +52,17 @@ table {
 
 body {
   font-family: sans-serif;
+  background-color: #f8f9fa;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkblue;
+}
+
 
 /*====Header====*/
 
@@ -60,21 +70,46 @@ body {
 header {
   text-align: right;
   line-height: 2;
+  margin: .5rem;
+  margin-left: 11rem;
 }
 
 .upper-nav-bar {
+  font-size: .75rem;
+}
+
+.nav-bar {
   font-size: .8rem;
-  margin-bottom: 1rem;
+  margin-bottom: -.4rem;
+  margin-top: 1rem;
+}
+
+.s-bar {
+  float: right;
+  margin: 0 .4rem;
+}
+
+input {
+  background-color: transparent;
+}
+
+.left-nav {
+  display: inline-block;
+  float: left;
+  margin: 0 .5rem;
+}
+
+.left-nav a {
+  border-right: solid 1px #a7d7f9;
+  border-left: solid 1px #a7d7f9;
 }
 
 /*====Side-bar====*/
 
 .side-bar {
   position: absolute;
-  display: block;
-  font-size: .8rem;
-  line-height: 1.3;
-  
+  font-size: .75rem;
+  line-height: 1.5;
 }
 
 .side-bar ul {
@@ -88,13 +123,24 @@ header {
   margin-bottom: 0;
 }
 
+.side-bar p {
+  border-bottom: solid 1px darkgray;
+  margin: .2rem 0
+}
+
+.right-link {
+  color: darkgray;
+  float: right;
+}
+
 /*====Content====*/
 
 .container {
-  display: block;
-  margin-left: 10rem;
-  padding-left: 1rem;
-  
+  margin-left: 11rem;
+  padding: 0 1rem;
+  border: solid 1px #a7d7f9;
+  border-right: none;
+  background-color: white;
 }
 
 h1 {
@@ -102,6 +148,7 @@ h1 {
   font-style: italic;
   font-family: serif;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 h1::after{
@@ -120,6 +167,33 @@ h6 {
   margin-bottom: 2rem;
 }
 
+.table {
+  float: right;
+  margin: 1rem;
+  margin-right: 0;
+  font-size: .8rem;
+  line-height: 2;
+  border: solid 1px darkgray;
+  background-color: #f8f9fa;
+  padding: 0 1rem;
+
+}
+
+.table-cover {
+  width: 220px
+}
+
+.first-caption {
+  font-weight: 700;
+  font-style: italic;
+  font-size: .875rem;
+}
+
+.fig-cap {
+  font-size: .8rem;
+  margin-top: -.8rem
+}
+
 .container p {
   font-size: .875rem;
   line-height: 1.5;
@@ -134,17 +208,12 @@ h6 {
 h2 {
   font-family: serif;
   font-size: 1.3rem;
+  border-bottom: solid 1px darkgray;
+  padding-bottom: .2rem;
+  margin-bottom: 1rem;
 }
 
-h2::after {
-  display: inline-block;
-  content: "";
-  background-color: darkgray;
-  height: 1px;
-  width: 100%;
-  vertical-align: middle;
-  margin-top: -1.1rem;
-}
+
 
 h3 {
   font-weight: 700;
@@ -198,6 +267,35 @@ figcaption {
   padding: .3rem;
 }
 
+.references {
+  font-size: .83rem;
+  line-height: 1.5;
+  margin-top: -.8rem;
+  list-style: decimal;
+  margin-left: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.external-links {
+  font-size: .875rem;
+  line-height: 1.5rem;
+  margin: 1rem ;
+  list-style: disc;
+}
+
+.link-collection {
+  font-size: .875rem;
+  line-height: 1.5;
+  margin: 1rem;
+  border: solid 1px darkgray;
+  background-color: #f8f9fa;
+  padding: .5rem;
+}
+
+.link-collection a {
+  border-left: solid 1px darkgray;
+  padding-left: .5rem;
+}
 
 /*====Footer====*/
 
@@ -207,6 +305,7 @@ figcaption {
   padding-left: 1rem;
   font-size: .7rem;
   line-height: 1.4;
+  background-color: #f8f9fa;
   
 }
 
