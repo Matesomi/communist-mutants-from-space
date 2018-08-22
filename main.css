@@ -52,7 +52,7 @@ table {
 
 body {
   font-family: sans-serif;
-  background-color: #f8f9fa;
+  background-image: linear-gradient(to top,#f8f9fa  83%,#ffffff 100%);
 }
 
 a {
@@ -61,6 +61,7 @@ a {
 
 a:hover {
   color: darkblue;
+  text-decoration: underline;
 }
 
 
@@ -80,28 +81,34 @@ header {
 
 .nav-bar {
   font-size: .8rem;
-  margin-bottom: -.4rem;
+  margin-bottom: -.5rem;
   margin-top: 1rem;
-}
-
-.s-bar {
-  float: right;
-  margin: 0 .4rem;
 }
 
 input {
   background-color: transparent;
 }
 
-.left-nav {
+.left-nav li {
   display: inline-block;
+  border-left: solid 1px #a7d7f9;
   float: left;
-  margin: 0 .5rem;
+  padding: 0 .3rem;
+  
 }
 
-.left-nav a {
-  border-right: solid 1px #a7d7f9;
+.right-nav li {
+  display: inline-block;
   border-left: solid 1px #a7d7f9;
+  padding: 0 .3rem;
+}
+
+.article, .read {
+  background-color: white;
+}
+
+.read {
+  margin-right: -.2rem;
 }
 
 /*====Side-bar====*/
